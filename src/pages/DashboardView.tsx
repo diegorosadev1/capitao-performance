@@ -174,9 +174,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       {/* Top Header / Page Title Section exactly matching screenshot */}
       <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
         <div>
-          <span className="text-[10px] font-display font-bold uppercase tracking-widest text-neutral-400">
-            VISÃO GERAL
-          </span>
+       
           <h1 className="font-display font-black text-2xl sm:text-3xl text-neutral-50 tracking-tight mt-0.5">
             Visão Geral
           </h1>

@@ -76,14 +76,7 @@ export const LoginView: React.FC<LoginViewProps> = ({ onLoginSuccess }) => {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/80 via-transparent to-[#0D0D0D]/90" />
           <div className="absolute inset-0 bg-black/40" />
 
-          {/* Stencil wall typography 'DISCIPLINA FOCO RESULTADO' from reference image */}
-          <div className="absolute right-10 top-24 pointer-events-none opacity-20 hidden md:block text-right">
-            <div className="font-display font-black text-2xl lg:text-3xl text-neutral-400 tracking-[0.2em] leading-tight">
-              DISCIPLINA<br />
-              FOCO<br />
-              RESULTADO
-            </div>
-          </div>
+    
 
           {/* Subtle Captain Monogram Watermark on back of figure */}
           <div className="absolute left-[34%] top-[45%] -translate-x-1/2 -translate-y-1/2 pointer-events-none opacity-25 hidden sm:flex items-center justify-center w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-xs border border-white/20 text-white font-display font-black text-2xl">
