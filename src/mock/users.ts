@@ -1,0 +1,46 @@
+import { UserProfile } from '../types';
+
+export const MOCK_USERS: UserProfile[] = [
+  {
+    id: 'user-gestor-1',
+    name: 'Carlos Albuquerque',
+    email: 'carlos.gestao@capitaoperformance.com.br',
+    role: 'gestor',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
+    unitId: 'unit-bom-retiro',
+    unitName: 'Unidade Bom Retiro (Matriz)',
+    title: 'Sócio & Diretor de Operações',
+  },
+  {
+    id: 'user-barbeiro-1',
+    name: 'Mateus Silveira',
+    email: 'mateus.silveira@capitaoperformance.com.br',
+    role: 'barbeiro',
+    avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
+    unitId: 'unit-bom-retiro',
+    unitName: 'Unidade Bom Retiro',
+    title: 'Master Barber',
+    professionalId: 'prof-1',
+  },
+  {
+    id: 'user-recepcao-1',
+    name: 'Beatriz Vasconcelos',
+    email: 'beatriz.recepcao@capitaoperformance.com.br',
+    role: 'recepcao',
+    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+    unitId: 'unit-bom-retiro',
+    unitName: 'Unidade Bom Retiro',
+    title: 'Coordenadora de Atendimento',
+  },
+  {
+    id: 'user-lider-1',
+    name: 'Rodrigo Fontes',
+    email: 'rodrigo.lider@capitaoperformance.com.br',
+    role: 'lider',
+    avatarUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80',
+    unitId: 'unit-bom-retiro',
+    unitName: 'Unidade Bom Retiro',
+    title: 'Líder Técnico & Head Barber',
+    professionalId: 'prof-2',
+  },
+];

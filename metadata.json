@@ -1,0 +1,6 @@
+{
+  "name": "Capitão Performance",
+  "description": "Sistema de gestão, performance e inteligência para rede de barbearias premium.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

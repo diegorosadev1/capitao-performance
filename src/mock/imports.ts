@@ -1,0 +1,88 @@
+import { ImportBatch } from '../types';
+
+export const MOCK_IMPORT_BATCHES: ImportBatch[] = [
+  {
+    id: 'import-revenue',
+    type: 'faturamento',
+    title: 'Faturamento & Vendas',
+    description: 'Importação de extratos de caixa diário, POS de cartão, Pix e vendas de produtos.',
+    status: 'idle',
+    lastImportedAt: '24/09/2026 às 19:40',
+    sampleColumns: ['Data', 'Comprovante', 'Profissional', 'Servico', 'FormaPagamento', 'ValorBruto', 'Desconto', 'ValorLiquido'],
+    samplePreview: [
+      { Data: '24/09/2026 14:15', Comprovante: 'REC-9821', Profissional: 'Mateus Silveira', Servico: 'Combo Barba + Corte', FormaPagamento: 'Cartão Crédito', ValorBruto: 'R$ 160,00', Desconto: 'R$ 0,00', ValorLiquido: 'R$ 160,00' },
+      { Data: '24/09/2026 15:00', Comprovante: 'REC-9822', Profissional: 'Rodrigo Fontes', Servico: 'Corte Tesoura', FormaPagamento: 'Pix', ValorBruto: 'R$ 95,00', Desconto: 'R$ 0,00', ValorLiquido: 'R$ 95,00' },
+      { Data: '24/09/2026 15:30', Comprovante: 'REC-9823', Profissional: 'Gabriel Nogueira', Servico: 'Fade Navalhado', FormaPagamento: 'Cartão Débito', ValorBruto: 'R$ 85,00', Desconto: 'R$ 0,00', ValorLiquido: 'R$ 85,00' },
+      { Data: '24/09/2026 16:10', Comprovante: 'REC-9824', Profissional: 'Mateus Silveira', Servico: 'Pomada Matte Modeladora', FormaPagamento: 'Pix', ValorBruto: 'R$ 85,00', Desconto: 'R$ 0,00', ValorLiquido: 'R$ 85,00' },
+    ],
+  },
+  {
+    id: 'import-professionals',
+    type: 'profissionais',
+    title: 'Profissionais & Comissões',
+    description: 'Tabela de barbeiros, faixas de comissionamento, metas do ciclo e unidades.',
+    status: 'idle',
+    lastImportedAt: '01/09/2026 às 10:00',
+    sampleColumns: ['CPF', 'Nome', 'Cargo', 'Unidade', 'ComissaoServico', 'ComissaoProduto', 'MetaMensal'],
+    samplePreview: [
+      { CPF: '***.441.228-**', Nome: 'Mateus Silveira', Cargo: 'Master Barber', Unidade: 'Bom Retiro', ComissaoServico: '50%', ComissaoProduto: '20%', MetaMensal: 'R$ 18.000,00' },
+      { CPF: '***.892.118-**', Nome: 'Rodrigo Fontes', Cargo: 'Head Barber', Unidade: 'Bom Retiro', ComissaoServico: '50%', ComissaoProduto: '20%', MetaMensal: 'R$ 17.000,00' },
+      { CPF: '***.123.778-**', Nome: 'Gabriel Nogueira', Cargo: 'Barbeiro Sênior', Unidade: 'Bom Retiro', ComissaoServico: '48%', ComissaoProduto: '20%', MetaMensal: 'R$ 15.000,00' },
+    ],
+  },
+  {
+    id: 'import-customers',
+    type: 'clientes',
+    title: 'Base de Clientes (CRM)',
+    description: 'Cadastros de clientes, telefones de contato, histórico de consumo e datas de visitas.',
+    status: 'idle',
+    lastImportedAt: '20/09/2026 às 11:20',
+    sampleColumns: ['NomeCompleto', 'Telefone', 'Email', 'DataNascimento', 'BarbeiroPreferido', 'TotalVisitas'],
+    samplePreview: [
+      { NomeCompleto: 'Guilherme Sampaio', Telefone: '(11) 99882-3341', Email: 'guilherme.sampaio@advogados.com.br', DataNascimento: '14/05/1988', BarbeiroPreferido: 'Mateus Silveira', TotalVisitas: '26' },
+      { NomeCompleto: 'Eduardo Cavalcanti', Telefone: '(11) 98771-4450', Email: 'eduardo.c@fintechgroup.io', DataNascimento: '28/09/1992', BarbeiroPreferido: 'Rodrigo Fontes', TotalVisitas: '18' },
+      { NomeCompleto: 'Alexandre Pires Novaes', Telefone: '(11) 99120-7733', Email: 'alexandre.p.novaes@gmail.com', DataNascimento: '03/12/1995', BarbeiroPreferido: 'Gabriel Nogueira', TotalVisitas: '9' },
+    ],
+  },
+  {
+    id: 'import-appointments',
+    type: 'atendimentos',
+    title: 'Atendimentos & Agendamentos',
+    description: 'Log detalhado de horários, status de comparecimento, cancelamentos e no-shows.',
+    status: 'idle',
+    lastImportedAt: '24/09/2026 às 08:00',
+    sampleColumns: ['IdAgendamento', 'DataHora', 'Cliente', 'Barbeiro', 'Servico', 'StatusAtendimento'],
+    samplePreview: [
+      { IdAgendamento: 'AG-10291', DataHora: '24/09/2026 10:00', Cliente: 'Bernardo Valente', Barbeiro: 'Mateus Silveira', Servico: 'Combo Barba + Corte', StatusAtendimento: 'Concluído' },
+      { IdAgendamento: 'AG-10292', DataHora: '24/09/2026 11:00', Cliente: 'Vitor Hugo Fagundes', Barbeiro: 'Felipe Santana', Servico: 'Corte Máquina e Tesoura', StatusAtendimento: 'Concluído' },
+      { IdAgendamento: 'AG-10293', DataHora: '24/09/2026 11:45', Cliente: 'Renato Bitencourt', Barbeiro: 'Lucas Brandão', Servico: 'Combo Executivo', StatusAtendimento: 'Concluído' },
+    ],
+  },
+  {
+    id: 'import-services',
+    type: 'servicos',
+    title: 'Catálogo de Serviços & Preços',
+    description: 'Lista de preços, duração média de cada atendimento e categorização oficial.',
+    status: 'idle',
+    lastImportedAt: '15/08/2026 às 14:30',
+    sampleColumns: ['Codigo', 'NomeServico', 'Categoria', 'DuracaoMinutos', 'PrecoPadrao'],
+    samplePreview: [
+      { Codigo: 'SRV-01', NomeServico: 'Corte Tradicional / Tesoura', Categoria: 'Cabelo', DuracaoMinutos: '40', PrecoPadrao: 'R$ 85,00' },
+      { Codigo: 'SRV-02', NomeServico: 'Barboterapia com Toalha Quente', Categoria: 'Barba', DuracaoMinutos: '35', PrecoPadrao: 'R$ 75,00' },
+      { Codigo: 'SRV-03', NomeServico: 'Combo Barba Terapia + Corte', Categoria: 'Combo', DuracaoMinutos: '60', PrecoPadrao: 'R$ 160,00' },
+    ],
+  },
+  {
+    id: 'import-other',
+    type: 'outros',
+    title: 'Outros Dados & Metas Externas',
+    description: 'Planilhas avulsas de despesas operacionais, comissões de parceiros e inventário.',
+    status: 'idle',
+    lastImportedAt: '10/09/2026 às 16:00',
+    sampleColumns: ['Registro', 'Descricao', 'CentroCusto', 'Valor', 'DataCompetencia'],
+    samplePreview: [
+      { Registro: 'EXP-401', Descricao: 'Estoque Produtos Linha Premium', CentroCusto: 'Insumos', Valor: 'R$ 3.420,00', DataCompetencia: '09/2026' },
+      { Registro: 'EXP-402', Descricao: 'Café Grão Especial & Bebidas', CentroCusto: 'Cortesia Recepção', Valor: 'R$ 680,00', DataCompetencia: '09/2026' },
+    ],
+  },
+];
