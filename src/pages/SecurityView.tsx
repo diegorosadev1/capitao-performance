@@ -67,7 +67,7 @@ export const SecurityView: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           <div className="p-4 rounded-xl bg-neutral-950 border border-neutral-800 space-y-2">
             <div className="font-display font-bold text-neutral-100 text-sm flex items-center justify-between">
-              <span>Gestor Geral</span>
+              <span>Fundador</span>
               <span className="text-[10px] px-2 py-0.5 rounded bg-neutral-800 text-neutral-200">Full</span>
             </div>
             <p className="text-neutral-400">Acesso irrestrito a faturamento, comissões, metas, importações e auditoria.</p>

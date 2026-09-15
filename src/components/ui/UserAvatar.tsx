@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface UserAvatarProps {
   src?: string;
@@ -13,9 +13,16 @@ export const UserAvatar: React.FC<UserAvatarProps> = ({
   size = 'md',
   status,
 }) => {
+  const [imageError, setImageError] = useState(false);
+
+  useEffect(() => {
+    setImageError(false);
+  }, [src]);
+
   const getInitials = (n: string) => {
     return n
-      .split(' ')
+      .trim()
+      .split(/\s+/)
       .map((part) => part[0])
       .slice(0, 2)
       .join('')
@@ -37,18 +44,17 @@ export const UserAvatar: React.FC<UserAvatarProps> = ({
     inativo: 'bg-neutral-600',
   };
 
+  const showImage = src && !imageError;
+
   return (
     <div className="relative inline-block shrink-0">
-      {src ? (
+      {showImage ? (
         <img
           src={src}
           alt={name}
           className={`${sizeClasses[size]} rounded-full object-cover border border-neutral-700 bg-neutral-900`}
           referrerPolicy="no-referrer"
-          onError={(e) => {
-            // Fallback to initials if image fails
-            (e.target as HTMLElement).style.display = 'none';
-          }}
+          onError={() => setImageError(true)}
         />
       ) : (
         <div
@@ -57,6 +63,7 @@ export const UserAvatar: React.FC<UserAvatarProps> = ({
           {getInitials(name)}
         </div>
       )}
+
       {status && (
         <span
           className={`absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full ring-2 ring-neutral-950 ${statusDotClasses[status]}`}

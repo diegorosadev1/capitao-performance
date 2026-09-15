@@ -1,10 +1,11 @@
 import { UserProfile } from '../types';
+import Everton from '../assets/images/everton.jpg'
 
 export const MOCK_USERS: UserProfile[] = [
   {
     id: 'user-gestor-1',
-    name: 'Carlos Albuquerque',
-    email: 'carlos.gestao@capitaoperformance.com.br',
+    name: 'Everton Santos',
+    email: 'everton.gestao@capitaoperformance.com.br',
     role: 'gestor',
     avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80',
     unitId: 'unit-bom-retiro',
@@ -24,8 +25,8 @@ export const MOCK_USERS: UserProfile[] = [
   },
   {
     id: 'user-recepcao-1',
-    name: 'Beatriz Vasconcelos',
-    email: 'beatriz.recepcao@capitaoperformance.com.br',
+    name: 'Julia Esquivel',
+    email: 'julia.recepcao@capitaoperformance.com.br',
     role: 'recepcao',
     avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
     unitId: 'unit-bom-retiro',
@@ -34,8 +35,8 @@ export const MOCK_USERS: UserProfile[] = [
   },
   {
     id: 'user-lider-1',
-    name: 'Rodrigo Fontes',
-    email: 'rodrigo.lider@capitaoperformance.com.br',
+    name: 'Bryan',
+    email: 'bryan.lider@capitaoperformance.com.br',
     role: 'lider',
     avatarUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80',
     unitId: 'unit-bom-retiro',

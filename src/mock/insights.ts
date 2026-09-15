@@ -132,7 +132,7 @@ export const INITIAL_CHAT_MESSAGES: ChatMessage[] = [
   {
     id: 'msg-welcome',
     sender: 'ia',
-    text: 'Olá, Carlos! Sou o motor de inteligência analítica do **Capitão Performance**. Estou processando todos os dados de faturamento, atendimentos, metas e clientes da sua rede em tempo real. O que você gostaria de analisar hoje?',
+    text: 'Olá, Everton! Sou o motor de inteligência analítica do **Capitão Performance**. Estou processando todos os dados de faturamento, atendimentos, metas e clientes da sua rede em tempo real. O que você gostaria de analisar hoje?',
     timestamp: '09:00',
     suggestions: [
       'Como estamos neste mês?',

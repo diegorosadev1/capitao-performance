@@ -124,9 +124,9 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
       statusLabel: 'Atenção',
     },
     {
-      id: 'prof-carlos',
+      id: 'prof-everton',
       pos: 5,
-      name: 'Carlos',
+      name: 'Everton',
       avatarUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80',
       revenue: 14980,
       target: 18000,

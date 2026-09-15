@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
   ];
 
   const roleLabels: Record<UserRole, { label: string; icon: React.ElementType }> = {
-    gestor: { label: 'Gestor Geral', icon: Shield },
+    gestor: { label: 'Fundador', icon: Shield },
     barbeiro: { label: 'Barbeiro', icon: Scissors },
     recepcao: { label: 'Recepção', icon: Users },
     lider: { label: 'Líder Técnico', icon: Compass },
